@@ -1,0 +1,5 @@
+services:
+  twig_gear.twig.twig_gear_extension:
+    class: Drupal\twig_gear\Twig\TwigGearExtension
+    tags:
+      - { name: twig.extension }
