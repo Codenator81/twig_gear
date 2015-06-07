@@ -1,0 +1,14 @@
+<?php
+/**
+ * This module have helpers for Twig
+ */
+
+/**
+* Implements hook_template_preprocess_default_variables_alter().
+*
+*/
+function twig_gear_template_preprocess_default_variables_alter(&$variables) {
+    //Have prefix to variables tg for not conflict with core variables
+    //Site name
+    $variables['tg_site_name'] = \Drupal::config('system.site')->get('name');
+}
