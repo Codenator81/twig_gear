@@ -1,0 +1,5 @@
+name: Twig Gear
+type: module
+description: "Helper functions to work with Twig"
+package: Twig
+core: 8.x
