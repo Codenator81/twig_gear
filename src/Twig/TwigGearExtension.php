@@ -22,12 +22,23 @@ class TwigGearExtension extends \Twig_Extension {
     }
 
     /**
-     * {@inheritdoc}
+     * Twig filters
      */
     public function getFilters() {
-        return array(
-            new \Twig_SimpleFilter('swapClass', array($this, 'swapClass')),
-        );
+        return [
+            new \Twig_SimpleFilter('tg_swapClass', [$this, 'swapClass']),
+        ];
+    }
+
+    /**
+     * Twig functions
+     */
+    public function getFunctions() {
+        return [
+            new \Twig_SimpleFunction('tg_getConfig', function($configName) {
+                return \Drupal::config($configName);
+            }),
+        ];
     }
 
     /**
