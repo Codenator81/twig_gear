@@ -1,0 +1,16 @@
+{
+  "name": "codenator81/twig_gear",
+  "description": "Helpers for Twig in Drupal",
+  "type": "drupal-module",
+  "homepage": "https://www.drupal.org/sandbox/oles89/2501921",
+  "authors": [
+    {
+      "name": "Aleksandrs Poltarjonoks",
+      "email": "codenator81@gmail.com",
+      "homepage": "https://github.com/Codenator81",
+      "role": "Maintainer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {}
+}
